@@ -22,23 +22,23 @@ try {
     echo $e, "\n\n";
 }
 
-// Test can attack $black queen
+// Test can attack $black queen with coordinates out of chessboard
 $canAttack = $queenAttack->canAttack([2, 9], [5, 6]);
-echo $canAttack ? 'Checkmate!!' : 'Check again..', "\n\n";
+echo $canAttack ? 'Checkmate!!' : 'Try again..', "\n\n";
 
-// Test can attack $black queen
+// Test can attack $black queen with diagonal
 $canAttack = $queenAttack->canAttack([2, 3], [5, 6]);
-echo $canAttack ? 'Checkmate!!' : 'Check again..', "\n\n";
+echo $canAttack ? 'Checkmate!!' : 'Try again..', "\n\n";
 
-// Test can attack $black queen
+// Test can attack $black queen with same column
 $canAttack = $queenAttack->canAttack([2, 3], [2, 6]);
-echo $canAttack ? 'Checkmate!!' : 'Check again..', "\n\n";
+echo $canAttack ? 'Checkmate!!' : 'Try again..', "\n\n";
 
-// Test can attack $black queen
+// Test can attack $black queen with same row
 $canAttack = $queenAttack->canAttack([1, 6], [2, 6]);
-echo $canAttack ? 'Checkmate!!' : 'Check again..', "\n\n";
+echo $canAttack ? 'Checkmate!!' : 'Try again..', "\n\n";
 
-// Test can attack $black queen
+// Test can attack $black queen without possibly
 $canAttack = $queenAttack->canAttack([1, 4], [2, 6]);
 echo $canAttack ? 'Checkmate!!' : 'Try again..', "\n";
 
